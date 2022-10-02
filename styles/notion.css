@@ -73,21 +73,23 @@
 }
 
 .notion-collection-card {
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: none;
 }
 
 .notion-collection-card-cover img {
-  border-radius: 16px;
+  border-radius: 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .notion-collection-card {
   overflow: visible;
+  border: 1px solid #eaeaea;
 }
 
 .notion-collection-card-cover {
-  border-radius: 16px;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  border-width: 0px;
 }
 
 .notion-collection-card-cover {
@@ -97,7 +99,7 @@
 }
 
 .notion-collection-card:hover .notion-collection-card-cover {
-  filter: brightness(120%);
+  filter: saturate(.9);
 }
 
 .notion-collection-card-body {
@@ -193,9 +195,9 @@
   border-radius: 24px;
 }
 
-.notion-page-cover-wrapper {
+/* .notion-page-cover-wrapper {
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
-}
+} */
 
 @media only screen and (max-width: 1200px) {
   .notion-page-cover-wrapper,
@@ -226,13 +228,14 @@
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: 0 0.1rem;
+  color: #7b7a76;
 }
 
 .notion-link:focus,
 .notion-link:hover {
   border-bottom-color: transparent;
 
-  background-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
+  background-image: linear-gradient(90.68deg, #008dd2 0.26%, #00a8f0 102.37%);
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: 100% 0.1rem;
@@ -371,7 +374,7 @@
 }
 
 .notion-bookmark:hover {
-  border-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
+  border-image: linear-gradient(90.68deg, #008dd2 0.26%, #00a8f0 102.37%);
   border-image-slice: 1;
 }
 
