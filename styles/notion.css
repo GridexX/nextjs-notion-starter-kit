@@ -222,6 +222,7 @@
   position: relative;
   transition: unset;
   opacity: 1;
+  padding-bottom: 1px;
   border-bottom-width: 0.1rem;
   background: transparent;
   background-origin: border-box;
@@ -229,6 +230,11 @@
   background-position: 50% 100%;
   background-size: 0 0.1rem;
   color: #7b7a76;
+}
+
+.dark-mode .notion-link {
+  color: #00a8f0;
+  border-color: #00a8f0;
 }
 
 .notion-link:focus,
@@ -242,6 +248,11 @@
 
   transition-property: background-position, background-size;
   transition-duration: 300ms;
+}
+
+.searchInput {
+  color: var(--fg-color);
+  caret-color: var(--fg-color);
 }
 
 .notion-red_background,
